@@ -10,7 +10,7 @@ body {
 header {
     background-color: #91C7B1;
     color: white;
-    height: 70vh;
+    height: 50vh;
     position: relative;
 }
 
@@ -31,16 +31,31 @@ header {
     transform: translate(-50%, -50%)
 }
 
-.bottom {
+.centered p span {
+    font-size: 1.3rem;
+}
+
+#flex {
     display: flex;
-    gap: 1rem;
-    position: absolute;
+    align-items: center;
+    gap: 3rem;
+    margin: 1rem 0rem;
+    /* text-align: center; */
+    /* display: flex; */
+    /* gap: 1rem; */
+    /* position: absolute;
     bottom: 1rem;
-    text-align: center;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%)
+    transform: translate(-50%) */
 } 
+
+.bottom div {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0rem;
+    gap: 1rem;
+}
 
 /* #flex-box {
     display: flex;
