@@ -6,9 +6,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000A3E;
+    color: white;
 }
 
-header {
+section {
     height: 100vh;
     position: relative;
 }
@@ -35,7 +36,7 @@ header {
     margin-bottom: 2rem;
 }
 
-.centered a {
+header a {
     text-decoration: none;
     padding: 1rem;
     color: #05FF00;
@@ -45,16 +46,10 @@ header {
     
 }
 
-.centered a:hover {
+header a:hover {
     color: white;
     background-color: #05FF00;
     transition: all 0.5s;
-}
-
-main {
-    height: 100vh;
-    color: white;
-    position: relative;
 }
 
 #skills {
@@ -84,6 +79,47 @@ main {
 #skills-container-3 {
     border: 2px solid #05FF00;
     border-radius: 5px;
+}
+
+#links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+#link-container-1 a {
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    border: #00F0FF 1px solid;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+#link-container-2 a {
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    border: #05FF00 1px solid;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+
+#link-container-1 a:hover {
+    background-color: #00F0FF;
+    transition: all 0.5s;
+}
+
+#link-container-2 a:hover {
+    background-color: #05FF00;
+    transition: all 0.5s;
+}
+
+footer {
+    background-color: black;
+    padding: 1rem;
 }
 
 /* canvas {
