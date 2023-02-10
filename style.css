@@ -57,17 +57,33 @@ main {
     position: relative;
 }
 
-.skill-container {
-    border: #00F0FF 2px solid;
-    padding: 1rem;
-    font-size: 1rem;
-    border-radius: 5px;
-}
-
 #skills {
     margin-top: 1rem;
     display: flex;
     gap: 1rem;
+}
+
+.skills-container {
+    width: 15rem;
+    font-size: 1.5rem;
+    position: relative;
+    height: 5rem;
+    padding: 1rem;
+}
+
+#skills-container-1 {
+    border: 2px solid #00F0FF;
+    border-radius: 5px;
+}
+
+#skills-container-2 {
+    border: 2px solid #FFC700;
+    border-radius: 5px;
+}
+
+#skills-container-3 {
+    border: 2px solid #05FF00;
+    border-radius: 5px;
 }
 
 /* canvas {
