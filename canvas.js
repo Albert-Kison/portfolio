@@ -53,14 +53,19 @@ window.addEventListener("load", function() {
         this.dx = dx;
         this.dy = dy;
         this.radius = radius;
+        const r = Math.random() * 255;
+        const g = Math.random() * 255;
+        const b = Math.random() * 255;
+        this.color = `rgb(${r}, ${g}, ${b})`;
 
         this.draw = function() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
             ctx.strokeStyle = 'blue';
-            // ctx.fillStyle = 'green';
+            
+            ctx.fillStyle = this.color;
             ctx.fill();
-            ctx.stroke(); 
+            // ctx.stroke(); 
         }
 
         this.update = function() {
@@ -80,12 +85,12 @@ window.addEventListener("load", function() {
     }
 
     let circles = []
-    for (let i = 0; i < 10; i++) {
-        const radius = 30
+    for (let i = 0; i < 15; i++) {
+        const radius = 100;
         const x = Math.random() * (canvas.width - radius * 2) + radius;
         const y = Math.random() * (canvas.height - radius * 2) + radius;;
-        const dx = Math.random() -  0.5;
-        const dy = Math.random() -  0.5;
+        const dx = (Math.random() -  0.5) * 10;
+        const dy = (Math.random() -  0.5) * 10;
 
         circles.push(new Circle(x, y, dx, dy, radius));
     }
