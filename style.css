@@ -113,6 +113,10 @@ section {
     border-radius: 5px;
 }
 
+.project-container div {
+    margin-bottom: 1rem;
+}
+
 .project-container img {
     width: 128px;
     height: 128px;
