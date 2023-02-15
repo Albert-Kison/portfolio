@@ -33,10 +33,15 @@ section {
 .grey-text {
     color: #929292;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 1rem; */
 }
 
-header a {
+#links {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+#viewCV {
     text-decoration: none;
     padding: 1rem;
     color: #05FF00;
@@ -46,7 +51,7 @@ header a {
     
 }
 
-header a:hover {
+#viewCV:hover {
     color: white;
     background-color: #05FF00;
     transition: all 0.5s;
@@ -67,54 +72,33 @@ header a:hover {
 }
 
 #skills-container-1 {
-    border: 2px solid #00F0FF;
+    background-color: #00F0FF;
+    color: #929292;
     border-radius: 5px;
 }
 
 #skills-container-2 {
-    border: 2px solid #FFC700;
+    background-color: #FFC700;
+    color: #929292;
     border-radius: 5px;
 }
 
 #skills-container-3 {
-    border: 2px solid #05FF00;
+    background-color: #05FF00;
+    color: #929292;
     border-radius: 5px;
 }
 
 #links {
     display: flex;
     gap: 1rem;
-    margin-top: 2rem;
     justify-content: center;
 }
 
-#link-container-1 a {
-    text-decoration: none;
-    padding: 1rem;
-    color: white;
-    border: #00F0FF 1px solid;
-    border-radius: 5px;
-    transition: all 0.5s;
-}
-
-#link-container-2 a {
-    text-decoration: none;
-    padding: 1rem;
-    color: white;
-    border: #05FF00 1px solid;
-    border-radius: 5px;
-    transition: all 0.5s;
-}
-
-
-#link-container-1 a:hover {
-    background-color: #00F0FF;
-    transition: all 0.5s;
-}
-
-#link-container-2 a:hover {
-    background-color: #05FF00;
-    transition: all 0.5s;
+#projects {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 
 footer {
